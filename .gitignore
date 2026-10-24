@@ -1,0 +1,22 @@
+# --- personal / scratch files (not part of the course) ---
+futurescope.md
+start copy.ipynb
+
+# --- generated data: recreate with the lesson scripts ---
+lesson_05_find_cube/data/
+lesson_06_camera_lift/data/*.npz
+lesson_08_six_joint_arm/output/
+outputs/
+*.log
+__pycache__/
+
+# --- training logs: keep only the two final policies (+ their settings and exported ONNX) ---
+logs/**
+!logs/**/
+!logs/rsl_rl/franka_lift/2026-10-24_17-36-25/model_1499.pt
+!logs/rsl_rl/franka_lift/2026-10-24_17-36-25/params/**
+!logs/rsl_rl/franka_lift/2026-10-24_17-36-25/exported/**
+!logs/rsl_rl/franka_drop_in_box/2026-10-24_21-09-44/model_1999.pt
+!logs/rsl_rl/franka_drop_in_box/2026-10-24_21-09-44/params/**
+!logs/rsl_rl/franka_drop_in_box/2026-10-24_21-09-44/exported/**
+!logs/rsl_rl/franka_lift/2026-10-24_16-07-34/videos/**
